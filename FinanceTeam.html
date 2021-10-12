@@ -36,7 +36,8 @@
         <img src="src/img/project-manager.png" width="400px" alt="logo" />
         <div class="pageContainer">
           <div>
-            <h2>All The Expenses: <span id="expenses">0 </span> $</h2>
+            <h2 class="expenses-header">All The Expenses: <span id="total"></span></h2> 
+            <div id="expenses"> </div> 
           </div>
 
           <div id="expValue">
@@ -48,7 +49,6 @@
                 <th>Manager ID</th>
                 <th>Amount of the expenses</th>
                 <th>Date of the expenses</th>
-                <th>Status</th>
               </thead>
               <tbody id="tbody"></tbody>
             </table>
