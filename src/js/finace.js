@@ -31,17 +31,17 @@ function calcTeamExpenses() {
   //extarct teamNames from each object in the array
   for (const item of teamsExpList) {
     teamName.push(item.teamName);
-    console.log(teamName);
+    // console.log(teamName);
   }
 
   //array of teams names with no duplication
   var unique = [...new Set(teamName)];
-  console.log(unique);
+  // console.log(unique);
 
   //loop through the unique team names and make array of related objects, then calculate the total expences for each team individualy
   for (i = 0; i < unique.length; i++) {
     teamList = teamsExpList.filter((team) => team.teamName === unique[i]);
-    console.log(teamList);
+    // console.log(teamList);
     calcExpensesforEachTeam(teamList);
   }
 }
@@ -49,9 +49,9 @@ function calcTeamExpenses() {
 function calcExpensesforEachTeam(teamList) {
   let teamTotalExp = 0;
   for (var a of teamList) {
-    console.log(a);
+    // console.log(a);
     teamTotalExp += Number(a.expensesAmount);
-    console.log(teamTotalExp);
+    // console.log(teamTotalExp);
   }
   expenses.innerHTML += `<li style="color: #12637c;"> Annual budget for ${a.teamName} Team: <span style="color: #12277c;">$ ${teamTotalExp} </span> </li>`;
 }

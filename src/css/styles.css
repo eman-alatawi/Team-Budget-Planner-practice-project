@@ -58,13 +58,6 @@ li:focus {
   justify-content: center;
   align-items: center;
 }
-.group-2138 {
-  width: 347.25px;
-  height: 140vh;
-  transform: translate(-35%, -5%);
-  margin-right: 5rem;
-}
-
 .center-content {
   height: 120vh;
   display: flex;
@@ -175,18 +168,19 @@ h2 {
 input {
   padding-left: 1rem;
 }
-.expenses-header{
+.expenses-header {
   border-radius: 1rem;
   padding: 0.5rem;
-  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 0px 8px;
 }
-#expenses{
+#expenses {
   height: 20vh;
   overflow-y: scroll;
-margin-bottom: 3rem;
+  margin-bottom: 3rem;
 }
 
-#expenses li:hover{
+#expenses li:hover {
   border-radius: 1rem;
   background-color: #d1e2e8;
   cursor: pointer;
